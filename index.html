@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EO Market</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EO Market</h1>
+        <div class="member-status">
+            <span id="member-status">Member: Not Logged In</span>
+            <button id="marketplace-btn">Marketplace</button>
+            <button id="make-listing-btn">Make a Listing</button>
+            <button id="my-listings-btn">My Listings</button>
+            <button id="refresh-app-btn">Refresh App</button>
+            <button id="logout-btn">Logout</button>
+        </div>
+    </header>
+    
+    <div class="container">
+        <aside class="login-section">
+            <h2>EO-Guides</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                
+                <button type="submit">Login</button>
+                <div class="links">
+                    <a href="#" id="forgot-password-link">Forgot Password</a>
+                    <a href="#" id="register-link">Register New User</a>
+                </div>
+            </form>
+        </aside>
+        
+        <aside class="items-section">
+            <h2>Items</h2>
+            <ul id="items-list">
+                <!-- Dynamically populated items -->
+            </ul>
+        </aside>
+        
+        <main class="content-section">
+            <h2>Player Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player Name</th>
+                        <th>Item</th>
+                    </tr>
+                </thead>
+                <tbody id="player-items">
+                    <!-- Dynamically populated player items -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+    
+    <footer>
+        <p>V1.002</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
